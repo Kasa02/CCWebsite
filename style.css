@@ -1,0 +1,185 @@
+html{
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(45deg, #148d2c, #cd8602);
+    font-family: Papyrus, Arial, Helvetica, sans-serif;
+  }
+ 
+  h1 {
+    font-size: 85px;
+    text-align: center;
+    color:rgb(228, 242, 255);
+    margin-bottom: 0px;
+    line-height: 80px;
+  }
+
+  h2 {
+    margin-top: 0px;
+    font-size: 30px;
+    text-align: center;
+    
+
+  }
+  
+  #about-me {
+    background: rgba(255, 255, 255, 0.1); /* 半透明背景 */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px auto;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* 添加阴影 */
+    text-align: center;
+}
+
+#about-me h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    color: #fffbf1;
+    text-shadow: 2px 2px 4px #000;
+}
+
+#about-me p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #f0f0f0;
+    text-align: justify;
+}
+
+  h3 {
+    font-size: 25px;
+    
+  }
+
+  canvas {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 800px;
+
+  }
+
+  .projects ol li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a2f06; 
+    text-decoration: none; 
+}
+
+  #preview-box {
+    position: absolute;
+    width: 300px;
+    height: 200px; 
+    border: 1px solid #ddd;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: none; 
+    z-index: 1000;
+    overflow: hidden; 
+}
+
+
+#preview-iframe {
+    width: 200%;
+    height: 200%;
+    transform: scale(0.5); 
+    transform-origin: top left;
+    pointer-events: none; 
+}
+  
+/* My artworks（this section is asisted by ChatGPT */
+.content-section {
+  display: flex; 
+  justify-content: space-between; 
+  margin: 20px auto;
+  width: 90%; 
+}
+
+/* Class Projects */
+.projects {
+  width: 45%; 
+}
+
+
+
+.itchio-link h4 a {
+  color: #ffffff; 
+  text-decoration: none; 
+}
+
+/* Other Artworks */
+.artworks {
+  width: 45%; 
+  text-align: center; 
+}
+
+
+.art-grid {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; 
+  margin-top: 20px;
+}
+
+
+.art-item img {
+  width: 100%; 
+  max-width: 200px; 
+  height: auto; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s; 
+}
+
+
+.art-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); 
+}
+
+#contact-me {
+  position: fixed; 
+  top: 50%; 
+  left: -250px; 
+  transform: translateY(-50%); 
+  width: 250px; 
+  background:#b16809 ;
+  padding: 10px 15px;
+  border-radius: 0 10px 10px 0; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  transition: left 0.3s ease; 
+  z-index: 1000; 
+}
+
+
+#contact-me:hover {
+  left: 0;
+}
+
+.contact-content {
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+  flex-wrap: wrap;
+}
+
+.contact-content p {
+  font-size: 16px;
+  color: #fffbf1; 
+  margin: 0;
+}
+
+.contact-content img {
+  width: 100px; /
+  height: auto; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  transition: transform 0.3s; 
+}
+.contact-content img:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); 
+}
